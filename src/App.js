@@ -7,9 +7,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className='gradient-04 z-0' />
+      <div className='gradient-05 z-0' />
       {/* <img src={bg} alt="" className='bg'/> */}
       <Hero />
+      <div className='gradient-06 z-0'/>
     </div>
   );
 }
