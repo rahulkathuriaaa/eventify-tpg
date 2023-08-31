@@ -10,7 +10,7 @@ import LeftTicket from '../Assets/ticket-left.png';
 
 export default function Hero() {
   return (
-    <div>
+    <div className='hero'>
       <img src={Bg} alt="" className='bg'/>
       <img src={BgFirst} alt="" className='bg-first' />
       <img src={BgSecond} alt="" className='bg-second' />
@@ -27,5 +27,5 @@ export default function Hero() {
       <img src={LeftTicket} alt="" className='left-ticket' />
 
     </div>
-  )
+  );
 }

@@ -16,16 +16,6 @@ body{
   height: 900px;
 }
 
-.left-patch{
-  /* background: radial-gradient(
-    #000000 100%,
-    #230944 100%,
-    #341162 100%
-  ); */
-  background: linear-gradient(135deg, white, blue);
-  min-height: 100vh;
-}
-
 #navbar{
   font-family: Inter;
   display: flex;
@@ -89,6 +79,10 @@ body{
   color: white;
   /* position: relative;
   z-index: 1; */
+}
+
+.hero{
+  height: 60rem;
 }
 
 .bg-first{
@@ -255,4 +249,36 @@ body{
   filter: blur(40px);
   z-index: -1;
   overflow: hidden;
+}
+
+.client-container{
+  margin: 50px 100px;
+  display: grid;
+  grid: auto / repeat(var(--columns),minmax(0,1fr));
+  place-items: center;
+  row-gap: var(--row-gap);
+  column-gap: var(--column-gap);
+  --row-gap: 32px;
+  --column-gap: 32px;
+  --columns: 6;
+}
+
+.client-logo{
+  height: 50px;
+}
+
+.client-pr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 25px;
+  font-weight: 550;
+  line-height: 0.6;
+  margin-bottom: 60px;
+}
+
+.text-pr{
+  color: rgb(118 140 175);
 }
