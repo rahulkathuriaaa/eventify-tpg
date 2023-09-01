@@ -4,6 +4,7 @@ import Hero from './Components/Hero';
 import Clients from './Components/Clients';
 import Features from './Components/Features';
 // import Services from './Components/Services';
+import Community from './Components/Community';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Clients />
       <Features />
       {/* <Services /> */}
+      <Community />
     </div>
   );
 }
