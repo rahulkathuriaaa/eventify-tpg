@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Clients from './Components/Clients';
+import Features from './Components/Features';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <div className='gradient-06 z-0'/>
       <Clients />
+      <Features />
     </div>
   );
 }

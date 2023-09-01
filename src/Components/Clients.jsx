@@ -14,7 +14,7 @@ import Vercel from './logos/Vercel';
 
 export default function Clients() {
   return (
-    <div>
+    <div className='client-div'>
       <p className='client-pr'>
       <span className="text-pr">
         Powering the world's best product teams.
