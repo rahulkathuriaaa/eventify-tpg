@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Clients from './Components/Clients';
 import Features from './Components/Features';
+// import Services from './Components/Services';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className='gradient-06 z-0'/>
       <Clients />
       <Features />
+      {/* <Services /> */}
     </div>
   );
 }

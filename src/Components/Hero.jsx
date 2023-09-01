@@ -21,13 +21,17 @@ export default function Hero() {
       <p className="Seamless">
         Seamless granular events hosting with NFT tickets.
       </p>
-      <div className="box"></div>
+      <div className="big-box">
+        <div className="box"></div>
+      </div>
       <div className="img-container">
         <img src={FrontTicket} alt="" className="front-ticket" />
       </div>
       <img src={Union1} alt="" className="union-down" />
       <img src={Union2} alt="" className="union-up" />
-      <img src={RightTicket} alt="" className="right-ticket" />
+      <div className="right-ticket-div">
+        <img src={RightTicket} alt="" className="right-ticket" />
+      </div>
       <img src={LeftTicket} alt="" className="left-ticket" />
     </div>
   );

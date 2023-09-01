@@ -1,5 +1,5 @@
 import React from "react";
-import FeaturesBg from "../Assets/features-bg.png";
+import FeaturesBg from "../Assets/Desktop - 7.png";
 
 export default function Features() {
   return (
@@ -109,7 +109,7 @@ export default function Features() {
 
           {/* Right Part */}
           <div>
-            <img src={FeaturesBg} alt="Features section" />
+            <img src={FeaturesBg} alt="Features section" className="features-img" />
           </div>
         </div>
       </div>
