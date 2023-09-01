@@ -5,6 +5,7 @@ import Clients from './Components/Clients';
 import Features from './Components/Features';
 // import Services from './Components/Services';
 import Community from './Components/Community';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Features />
       {/* <Services /> */}
       <Community />
+      <Footer />
     </div>
   );
 }
