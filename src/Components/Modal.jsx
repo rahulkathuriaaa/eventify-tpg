@@ -1,39 +1,39 @@
+// Popup.js
+"use client"
 import React from 'react';
+import Modal from 'react-modal';
 
-const Modals = ({ isOpen, onClose }) => {
+const customStyles = {
+    overlay: {
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    },
+    content: {
+      background: '#333',
+      border: '1px solid #444',
+      borderRadius: '10px', // Adjust the border radius as needed
+      color: 'white',
+      textAlign: 'center',
+    },
+  };
+
+const Popup = ({ isOpen, onClose }) => {
   return (
-    <div className={`fixed inset-0 ${isOpen ? '' : 'hidden'} flex items-center justify-center z-50`}>
-      <div className="modal-overlay" onClick={onClose}></div>
-      <div className="modal-container bg-white w-96 mx-auto rounded shadow-lg z-50 overflow-y-auto">
-        <div className="modal-close absolute top-2 right-3 cursor-pointer" onClick={onClose}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onClose}
+      contentLabel="Popup"
+      style={customStyles}
+    >
+                <div>
+          <h1 className="feature-h1">Congratulations! 🎉</h1>
         </div>
-        <div className="modal-content p-4 text-left">
-          <h1 className="text-xl font-bold mb-4">Modal Title</h1>
-          <p className="mb-4">Modal content goes here.</p>
-          <button
-            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded"
-            onClick={onClose}
-          >
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
+        <div class="glass-container">
+         <img src="/nft.png" alt="Showcased Image" class="showcased-image"/>
+       </div>
+      <button onClick={onClose} className="bg-[#8A42D8] hover:bg-blue-600 text-white py-2 px-4 rounded mt-4"
+>Close</button>
+    </Modal>
   );
 };
 
-export default Modals;
+export default Popup;

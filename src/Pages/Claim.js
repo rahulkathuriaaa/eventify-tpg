@@ -1,19 +1,18 @@
-import React from 'react'
-// import { useState } from 'react';
-// import Modals from '../Components/Modal';
+import React,{ useState } from 'react'
+import Popup from '../Components/Modal';
 
-// const [isModalOpen, setIsModalOpen] = useState(false);
 
-//   const handleOpenModal = () => {
-//     setIsModalOpen(true);
-//   };
-
-//   const handleCloseModal = () => {
-//     setIsModalOpen(false);
-//   };
 
 
 const Claim = () => {
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+    const closePopup = () => {
+        setIsPopupOpen(false);
+      };
+    const openPopup = () => {
+        setIsPopupOpen(true);
+    }
+
   return (
     // <div className='mt-10'>
     //      <div class="glass-container">
@@ -25,10 +24,10 @@ const Claim = () => {
 
     <div className="flex justify-center items-center h-screen">
     <button className="bg-[#8A42D8] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-      >
+     onClick={openPopup} >
       Connect Wallet
     </button>
-    {/* <Modals isOpen={isModalOpen} onClose={handleCloseModal} /> */}
+    <Popup isOpen={isPopupOpen} onClose={closePopup} />
 
   </div>
 
