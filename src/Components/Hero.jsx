@@ -22,7 +22,9 @@ export default function Hero() {
         Seamless granular events hosting with NFT tickets.
       </p>
       <div className="big-box">
-        <div className="box"></div>
+        <div className="box">
+          <a className="text-white" href="/claim">claim</a>
+        </div>
       </div>
       <div className="img-container">
         <img src={FrontTicket} alt="" className="front-ticket" />

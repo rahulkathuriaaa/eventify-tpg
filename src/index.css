@@ -10,3 +10,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Styles for the glassmorphic container */
+.glass-container {
+  background: rgba(255, 255, 255, 0.15); /* Adjust opacity for the glass effect */
+  backdrop-filter: blur(15px); /* Blur effect for the background */
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px; /* Increase container width */
+  max-width: 90%; /* Adjust the container's width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Add a shadow to the container */
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Add hover effects */
+}
+
+/* Style for the showcased image */
+.showcased-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px; /* Match the container's border-radius */
+}
+
+/* Hover effect on container */
+.glass-container:hover {
+  transform: scale(1.05); /* Enlarge the container on hover */
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}
+
+.disclaimer{
+  margin-top: 2%;
+}

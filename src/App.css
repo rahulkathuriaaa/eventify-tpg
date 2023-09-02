@@ -561,4 +561,20 @@ body {
 
 .foot-menu{
   margin: 30px;
+  color: #fff;
+}
+
+.foot-info{
+  color: #fff;
+}
+
+.foot-form{
+  width: 100%;
+  border: none; /* Remove the border */
+  background: transparent; /* Make it transparent */
+  padding: 10px; /* Add some padding for spacing */
+  color: #fff; /* Change text color if needed */
+  align-items: center;
+  text-align: center;
+
 }

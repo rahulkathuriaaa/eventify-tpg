@@ -9,26 +9,26 @@ export default function Footer() {
         <div className="foot-left">
           <div className="foot-container glass">
             <div className="foot-sign">Sign Up to Receive Product Updates and More</div>
-            <form action="" method="post">
-              <input type="email" placeholder="youremail@gmail.com" />
+            <form action="" method="post" className="foot-form">
+              <input type="email" placeholder="youremail@gmail.com" className="foot-form"/>
             </form>
             <div className="blank"></div>
           </div>
 
-          <div>
-            <div>2023, All Rights Reserved</div>
-            <div>Terms & Conditions Privacy</div>
-          </div>
+          {/* <div>
+            <div className="foot-info">2023, All Rights Reserved</div>
+            <div className="text-white">Terms & Conditions Privacy</div>
+          </div> */}
         </div>
 
         {/* Right Part */}
         <div className="foot-right">
           <div className="foot-menu">
-            <div>Menu</div>
+            <div><a href="">Menu</a></div>
             <ul>
-                <li>Featured Events</li>
-                <li>Inventory</li>
-                <li>Docs</li>
+                <li><a href="">Featured Events</a></li>
+                <li><a href="">Inventory</a></li>
+                <li><a href="">Docs</a></li>
             </ul>
           </div>
 
