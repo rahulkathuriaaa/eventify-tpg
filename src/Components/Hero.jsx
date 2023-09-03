@@ -24,6 +24,7 @@ export default function Hero() {
       <div className="big-box">
         <div className="box">
         <div className="hero-box-text">
+          
           <Link to="/claim">Claim Now</Link></div>
         </div>
       </div>
