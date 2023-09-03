@@ -30,9 +30,9 @@ body {
 .logo {
   position: relative;
   width: auto;
-  height: 65px;
+  height: 30px;
   overflow: hidden;
-  margin-right: 10px;
+  margin-right: 60px;
 }
 
 #features ul {
@@ -790,4 +790,21 @@ transform: matrix(-0.92, -0.4, 0.02, -1, 0, 0);
   color: white;
   position: relative;
   z-index: 5;
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }

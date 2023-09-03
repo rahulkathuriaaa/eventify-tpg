@@ -7,7 +7,6 @@ export default function Navbar() {
     <div>
       <nav id="navbar">
         <img src={logo} alt="logo" className="logo" />
-        <div className="i-know-spots">I KNOW SPOTS</div>
         <div className="items" id="features">
           <ul className="first">
             <li>Featured Events</li>

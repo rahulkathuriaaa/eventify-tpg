@@ -1,16 +1,5 @@
 import React from 'react';
-import Alan from './logos/Alan';
-import Arc from './logos/Arc';
-import Cashapp from './logos/Cashapp';
-import Descript from './logos/Descript';
-import Loom from './logos/Loom';
-import Mercury from './logos/Mercury';
-import Opensea from './logos/Opensea';
-import Pitch from './logos/Pitch';
-import Ramp from './logos/Ramp';
-import Raycast from './logos/Raycast';
-import Retool from './logos/Retool';
-import Vercel from './logos/Vercel';
+
 
 export default function Clients() {
   return (
@@ -23,20 +12,19 @@ export default function Clients() {
       enterprises.
       </p>
       
-      <div className='client-container'>
-        <Ramp />
-        <Loom />
-        <Vercel />
-        <Descript />
-        <Cashapp />
-        <Raycast />
-        <Mercury />
-        <Retool />
-        <Alan />
-        <Arc />
-        <Opensea />
-        <Pitch />
-      </div>
+      <div className="client-container">
+      <img src="/tpg.png" alt="/polygon.png" height={100} width={180} className="ml-6 hidden md:block"/> 
+      <img src='techland.png' alt="/polygon.png" height={100} width={110} className="ml-6 hidden md:block"/>
+
+      <img src='arata.png' alt="/polygon.png" height={50} width={110} className="ml-6 hidden md:block"/>
+      <img src='sukrit.svg' alt="/polygon.png" height={30} width={100} className="ml-6 hidden md:block"/>
+      <img src='nine.svg' alt="/polygon.png" height={30} width={100} className="ml-6 hidden md:block"/>
+      <img src='/Chillinq.png' alt="/polygon.png" height={30} width={180} className="ml-6 hidden md:block"/>
+
+
+
+    </div>
+
     </div>
   )
 }
