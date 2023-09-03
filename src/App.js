@@ -31,6 +31,7 @@ import { BrowserRouter as Main, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Claim from './Pages/Claim'
 import Whitelist from './Pages/Whitelist'
+import Prize from './Pages/Prize'
 const App = () => {
   return (
     <div>
@@ -39,6 +40,7 @@ const App = () => {
           <Route exact path="/" element={<Home/>} />
           <Route exact path ='/claim' element={<Claim/>} />
           <Route exact path ='/whitelist' element={<Whitelist/>} />
+          <Route exact path ='/prize' element={<Prize/>}/>
 
         </Routes>
       </Main>

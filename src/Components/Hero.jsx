@@ -7,7 +7,7 @@ import Union2 from "../Assets/Union-up.png";
 import Bg from "../Assets/background.png";
 import RightTicket from "../Assets/Ticket-right.png";
 import LeftTicket from "../Assets/ticket-left.png";
-
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <div className="hero">
@@ -23,7 +23,8 @@ export default function Hero() {
       </p>
       <div className="big-box">
         <div className="box">
-          <a className="text-white" href="/claim">claim</a>
+        <div className="hero-box-text">
+          <Link to="/claim">Claim Now</Link></div>
         </div>
       </div>
       <div className="img-container">
