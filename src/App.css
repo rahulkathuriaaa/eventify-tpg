@@ -449,7 +449,8 @@ body {
   margin: 35px 0;
   padding: 30px;
   height: 250px;
-  background: linear-gradient(-45deg, #1e0101, #7000ff 100%, #3a136c 100%);
+  /* background: linear-gradient(76.8deg, rgb(121, 45, 129) 3.6%, rgb(36, 31, 98) 90.4%); */
+  background: linear-gradient(45deg, #2f1c53, #a46dff, #f6d1fd);
   border: transparent;
   border-width: 10px;
   border-radius: 20px;
