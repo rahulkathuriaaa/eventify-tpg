@@ -1,6 +1,13 @@
 import React from 'react'
+import { mintNFT } from "../utils";
 
 const NFT = () => {
+
+  async function mintNFTCall() {
+    await mintNFT()
+    // add animation call
+  }
+
   return (
     <div>
        <div>
@@ -23,7 +30,7 @@ const NFT = () => {
 
         </div>
         <div className='flex items-center justify-center'>
-        <a href="#" className='px-[50px] py-2 bg-[#8A42D8] text-white rounded-xl no-underline font-semibold'>Claim Now</a>
+        <button onClick={mintNFTCall} className='px-[50px] py-2 bg-[#8A42D8] text-white rounded-xl no-underline font-semibold'>Claim Now</button>
 
         </div>
 

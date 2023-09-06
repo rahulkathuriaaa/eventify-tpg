@@ -18,7 +18,7 @@ export default function Navbar() {
           <button className="btn-hc">Host an event</button>
         </div>
         <div id="Connect">
-          <button className="btn-hc">Connect Wallet</button>
+          {/* <button className="btn-hc">Connect Wallet</button> */}
         </div>
       </nav>
     </div>
