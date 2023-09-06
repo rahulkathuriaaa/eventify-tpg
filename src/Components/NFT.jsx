@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { mintNFT } from "../utils";
 
 const NFT = () => {
+  
+  const [loading, setLoading] = useState(false)
 
   async function mintNFTCall() {
+    setLoading(true)
     await mintNFT()
-    // add animation call
+    setLoading(false)
+    // success animation
   }
 
   return (

@@ -2,7 +2,7 @@ import { ethers } from "ethers";
 import { GelatoRelay } from "@gelatonetwork/relay-sdk";
 import { contractAddress, contractAbi } from "./config";
 
-const gelatoAPI = `fX8HZi4kUzCCMm7_FE_4LZXkqfC6ttDyuKd1YRXIDdo_`
+const gelatoAPI = `mcCjkqqeo6JKZiTPs6Yc3940akAVAIIcGgXERLRRdFg_`
 
 
 export async function setWOperator(userAddress) {
