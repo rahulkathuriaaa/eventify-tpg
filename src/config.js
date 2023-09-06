@@ -1,4 +1,4 @@
-const PolygonAddress = `0xB270A76bBc0436c1345e4A4A895219Ab601fd125`
+const PolygonAddress = `0x9a9fDec9eAbc184B3F1c3a69CD4dBA6Aa2B994E0`
 
 export const contractAddress = PolygonAddress
 

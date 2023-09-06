@@ -29,21 +29,19 @@
 import React from 'react'
 import { BrowserRouter as Main, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
-import Claim from './Pages/Claim'
 import Whitelist from './Pages/Whitelist'
 import Operator from './Pages/Operator'
 import Prize from './Pages/Prize'
+
 const App = () => {
   return (
     <div>
       <Main>
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          <Route exact path ='/claim' element={<Claim/>} />
           <Route exact path ='/whitelist' element={<Whitelist/>} />
           <Route exact path ='/operator' element={<Operator/>} />
-          <Route exact path ='/prize' element={<Prize/>}/>
-
+          <Route exact path ='/claim' element={<Prize/>}/>
         </Routes>
       </Main>
     </div>
