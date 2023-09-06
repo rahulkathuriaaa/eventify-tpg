@@ -14,9 +14,18 @@ const NFT = () => {
     const [isWhitelisted, setIsWhitelisted] = useState(null);
     const [isWallet, setIsWallet] = useState(false)
 
-    useEffect(() => {
 
-    }, [])
+    let isValue = null;
+
+    useEffect(() => {
+      if (loading === true) {
+        isValue = true
+        // call loading function
+      }
+      if (loading === false && isValue === true) {
+        // success animation
+      }
+    }, [loading])
 
     async function connectWalletCall() {
       await connectWallet()
@@ -36,7 +45,7 @@ const NFT = () => {
     async function mintNFTCall() {
         setLoading(true);
         await mintNFT();
-        // setLoading(false)
+        setLoading(false)
         // success animation
     }
 
@@ -58,6 +67,7 @@ const NFT = () => {
                 className="px-[50px] py-2 bg-[#8A42D8] text-white rounded-xl no-underline font-semibold"
             >
                 Claim Now
+                {/*  */}
             </button>
         );
     }
