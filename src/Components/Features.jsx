@@ -9,8 +9,9 @@ export default function Features() {
         <div>
           <h1 className="feature-h1">Explore the Solutions</h1>
           <p className="features-pr">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-            ad aliquam totam nemo esse iste aut praesentium consequuntur
+          With NFTs, ticket authenticity can be easily verified, preventing counterfeiting and ensuring that only valid tickets are bought and sold.
+
+
           </p>
         </div>
 
@@ -22,9 +23,7 @@ export default function Features() {
             <div className="features-left-head">
               <h3 className="features-h3">Powerful suite of tools</h3>
               <p className="features-p">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa.
+              I Know Spots desires to lead the ticketing industry, both operationally and in digital ticketing.
               </p>
             </div>
 
@@ -34,11 +33,10 @@ export default function Features() {
               <a href="#0" className="features-a">
                 <div>
                   <div className="features-a-head">
-                    Building the Simple ecosystem
+                  Custom Subdomains
                   </div>
                   <div className="features-a-text">
-                    Take collaboration to the next level with security and
-                    administrative features built for teams.
+                   This feature would allow event organizers to have their dedicated web address associated with their event, enhancing their branding and providing a distinct online presence.
                   </div>
                 </div>
 
@@ -57,11 +55,11 @@ export default function Features() {
               <a href="#0" className="features-a">
                 <div>
                   <div className="features-a-head">
-                    Building the Simple ecosystem
+                  Event-specific Landing Pages
                   </div>
                   <div className="features-a-text">
-                    Take collaboration to the next level with security and
-                    administrative features built for teams.
+                  The landing page can be customized by the event organizer to reflect the event's theme, design, and promotional material.
+
                   </div>
                 </div>
 
@@ -83,11 +81,10 @@ export default function Features() {
               <a href="#0" className="features-a">
                 <div>
                   <div className="features-a-head">
-                    Building the Simple ecosystem
+                    I Know Spots DAO
                   </div>
                   <div className="features-a-text">
-                    Take collaboration to the next level with security and
-                    administrative features built for teams.
+                  Focuses on organizing and managing events within a community. 
                   </div>
                 </div>
 

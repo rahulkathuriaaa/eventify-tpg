@@ -6,10 +6,10 @@ export default function Clients() {
     <div className='client-div'>
       <p className='client-pr'>
       <span className="text-pr">
-        Powering the world's best product teams.
+        Trusted by the world's best product teams.
       </span>
       <br className="hidden-pr" /> From next-gen startups to established
-      enterprises.
+      communities.
       </p>
       
       <div className="client-container">

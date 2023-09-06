@@ -12,7 +12,7 @@ const Tweets = () => {
             <div className="App px-12 mx-12 sm:grid-cols-1 grid lg:grid-cols-3 gap-8" data-theme="light" >
      
      {/* <Tweet id="1659273134879514624" /> */}
-     <Tweet id="1686824395770298369" />
+     <Tweet id="1686463982092132352" />
      <Tweet id="1687011479307059200" />
      
      <Tweet id="1659272970903355392" />

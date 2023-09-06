@@ -16,13 +16,16 @@ export default function Hero() {
             <img src={BgSecond} alt="" className="bg-second" />
             <div className="text">
                 <div className="intro">Introducing</div>
-                <div className="event">Eventify</div>
+                <div className="event">iknowspots</div>
             </div>
             <p className="Seamless">
                 Seamless granular events hosting with NFT tickets.
             </p>
+            <br />
             <div className="big-box">
                 <div className="box">
+                
+
                     <div className="hero-box-text">
                         <Link to="/claim">Claim Now</Link>
                     </div>

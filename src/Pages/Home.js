@@ -21,6 +21,7 @@ function Home() {
       <Features />
       <Tweets/>
       {/* <Services /> */}
+      <br/>
       <UseCases/>
       <Community />
       <Footer />
