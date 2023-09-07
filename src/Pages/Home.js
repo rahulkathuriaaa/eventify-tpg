@@ -8,6 +8,7 @@ import Community from '../Components/Community';
 import Footer from '../Components/Footer';
 import Tweets from '../Components/Tweets';
 import UseCases from '../Components/UseCases';
+import FooterNew from '../Components/Footer-new';
 
 
 function Home() {
@@ -24,7 +25,8 @@ function Home() {
       <br/>
       <UseCases/>
       <Community />
-      <Footer />
+      {/* <Footer /> */}
+      <FooterNew/>
     </div>
   );
 }

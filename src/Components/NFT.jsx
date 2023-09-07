@@ -71,7 +71,7 @@ const NFT = () => {
   }
 
   function NotWhitelisted() {
-    return <div className="text-white">You are not whitelisted</div>;
+    return <div className="text-white py-2 px-10 space-x-1 mt-4 blue-glassmorphism rounded-md font-semibold">You are not whitelisted</div>;
   }
 
   // function ClaimButton() {
@@ -118,7 +118,7 @@ const NFT = () => {
     return (
       <button
         onClick={connectWalletCall}
-        className="px-11 py-4 bg-[#9966CC] text-white rounded-xl no-underline font-semibold mt-4"
+        className="px-11 py-4 bg-[#9966CC] text-white rounded-xl no-underline font-semibold mt-4 hover:bg-purple-700"
       >
         Connect Wallet
       </button>
