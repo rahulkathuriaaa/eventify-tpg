@@ -1,6 +1,7 @@
-const PolygonAddress = `0xd9dCD2A07Bd79D2186dcA29150091B7bF0E811d1`
+export const PolygonMumbaiAddress = `0xd9dCD2A07Bd79D2186dcA29150091B7bF0E811d1`
+export const PolygonAddress = process.env.REACT_APP_POLYGON_ADDRESS
 
-export const contractAddress = PolygonAddress
+export const contractAddress = process.env.REACT_APP_CONTRACT_ADDRESS
 
 export const contractAbi = 
 `
