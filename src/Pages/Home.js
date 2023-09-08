@@ -11,7 +11,7 @@ import FooterNew from '../Components/Footer-new';
 
 function Home() {
   return (
-    <div className="App">
+    <div className="App bg-[#140d1e]">
         <Navbar/>
       <div className='gradient-05 z-0' />
       <Hero />

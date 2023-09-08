@@ -13,7 +13,7 @@ const Whitelist = () => {
 
 
     return (
-        <div>
+        <div className="bg-[#140d1e]"> 
             <Navbar />
             <div className="text-white h-[100vh] p-12 mx-auto">
                 <div>

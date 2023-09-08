@@ -19,7 +19,7 @@ const App = () => {
   // }, [])
 
   return (
-    <div>
+    <div className='bg-[#140d1e]'>
       <Main>
         <Routes>
           <Route exact path="/" element={<Home/>} />

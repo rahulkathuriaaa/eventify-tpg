@@ -18,7 +18,7 @@ const Claim = () => {
 
   return (
 
-    <div className='flex'>
+    <div className='flex bg-[#140d1e]'>
     <SideBar/>
     <div className='left '>
       <ConnectWallet/>
