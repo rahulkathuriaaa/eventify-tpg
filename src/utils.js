@@ -4,7 +4,7 @@ import { GelatoRelay } from "@gelatonetwork/relay-sdk";
 import { contractAddress, contractAbi } from "./config";
 
 const gelatoAPI = `yB75oxiGBmWfc_Hwr7fa1Ep7Jign8v47arHy_KnCJ9k_`;
-const infuraApi = `eec39d04a1064883bf94ec917264ce9a`;
+// const infuraApi = `eec39d04a1064883bf94ec917264ce9a`;
 
 console.log("contract", contractAddress)
 export let currentUserAddr = "";

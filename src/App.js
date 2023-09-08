@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { BrowserRouter as Main, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Whitelist from './Pages/Whitelist'
 import Operator from './Pages/Operator'
 import Prize from './Pages/Prize'
-import { setCurrentContract } from './utils'
-import { ethers } from "ethers";
+// import { setCurrentContract } from './utils'
+// import { ethers } from "ethers";
 
 
 const App = () => {

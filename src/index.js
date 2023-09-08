@@ -6,7 +6,7 @@ import App from "./App";
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider, connectorsForWallets } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
-import { polygon, mainnet, polygonMumbai } from "wagmi/chains";
+import { polygon, polygonMumbai } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 import {
   argentWallet,
@@ -30,9 +30,9 @@ const { wallets } = getDefaultWallets({
     chains,
 });
 
-const demoAppInfo = {
-  appName: "Eventify",
-};
+// const demoAppInfo = {
+//   appName: "Eventify",
+// };
 
 const connectors = connectorsForWallets([
   ...wallets,

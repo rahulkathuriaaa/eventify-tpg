@@ -3,9 +3,7 @@ import Navbar from '../Components/Navbar'
 import Hero from '../Components/Hero';
 import Clients from '../Components/Clients';
 import Features from '../Components/Features';
-// import Services from './Components/Services';
 import Community from '../Components/Community';
-import Footer from '../Components/Footer';
 import Tweets from '../Components/Tweets';
 import UseCases from '../Components/UseCases';
 import FooterNew from '../Components/Footer-new';

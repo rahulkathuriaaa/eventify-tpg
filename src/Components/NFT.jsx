@@ -7,15 +7,15 @@ import {
 } from "../utils";
 import ReactConfetti from "react-confetti";
 
-import { ethers } from "ethers";
-import { contractAddress, contractAbi } from "../config";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
-import LoadingCircle from "./LoadingCircles";
+// import { ethers } from "ethers";
+// import { contractAddress, contractAbi } from "../config";
+// import { ConnectButton } from "@rainbow-me/rainbowkit";
+// import LoadingCircle from "./LoadingCircles";
 
 const NFT = () => {
     const [loading, setLoading] = useState(false);
     const [isWhitelisted, setIsWhitelisted] = useState(null);
-    const [isWallet, setIsWallet] = useState(false);
+    // const [isWallet, setIsWallet] = useState(false);
 
     //
     const [windowDimension, setDimension] = useState({

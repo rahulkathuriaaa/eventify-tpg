@@ -27,8 +27,8 @@ const Popup = ({ isOpen, onClose }) => {
                 <div>
           <h1 className="feature-h1">Congratulations! 🎉</h1>
         </div>
-        <div class="glass-container">
-         <img src="/nft.png" alt="Showcased Image" class="showcased-image"/>
+        <div className="glass-container">
+         <img src="/nft.png" alt="Showcased Image" className="showcased-image"/>
        </div>
       <button onClick={onClose} className="bg-[#8A42D8] hover:bg-blue-600 text-white py-2 px-4 rounded mt-4"
 >Close</button>

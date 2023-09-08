@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
 import { whitelistUser } from "../utils";
+import FooterNew from "../Components/Footer-new";
 
 const Whitelist = () => {
 
@@ -45,7 +45,7 @@ const Whitelist = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <FooterNew />
         </div>
     );
 };

@@ -55,7 +55,7 @@ export default function SideBar() {
                                 Congratulations 🎉
                             </div>
                         </div>
-                        <img src="/Ellipse.svg" />
+                        <img src="/Ellipse.svg" alt="/Ellipse.svg"/>
                     </div>
                 </div>
             </section>

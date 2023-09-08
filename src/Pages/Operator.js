@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Navbar from "../Components/Navbar";
-import Footer from "../Components/Footer";
-import { setOperator, whitelistUser, updateURI } from "../utils";
+import { whitelistUser, updateURI } from "../utils";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import FooterNew from "../Components/Footer-new";
 
 const Operator = () => {
     const [input, setInput] = useState(
@@ -82,7 +82,7 @@ const Operator = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <FooterNew />
         </div>
     );
 };
