@@ -2,20 +2,29 @@ import { ethers } from "ethers";
 import { GelatoRelay } from "@gelatonetwork/relay-sdk";
 import { contractAddress, contractAbi } from "./config";
 
-const gelatoAPI = `mcCjkqqeo6JKZiTPs6Yc3940akAVAIIcGgXERLRRdFg_`;
+const gelatoAPI = `yB75oxiGBmWfc_Hwr7fa1Ep7Jign8v47arHy_KnCJ9k_`;
 const infuraApi = `eec39d04a1064883bf94ec917264ce9a`;
 
 export let currentUserAddr = "";
 
-export async function connectWallet() {
+export async function connectWallet(withSign) {
     if (typeof window !== "undefined") {
-        const provider = new ethers.providers.Web3Provider(window.ethereum);
-        const signer = provider.getSigner();
-        const user = await signer.getAddress();
-        currentUserAddr = user;
-        console.log("connected")
-        // console.log("userAddress: " , currentUserAddr)
-        return true;
+        if (withSign === true) {
+
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const signer = provider.getSigner();
+            const user = await signer.getAddress();
+            currentUserAddr = user;
+            console.log("connected")
+            // console.log("userAddress: " , currentUserAddr)
+            return true;
+        }
+        else {
+            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            const user = await provider.send("eth_requestAccounts", []);
+            currentUserAddr = user[0];
+            console.log("connected")
+        }
     }
 }
 
@@ -24,6 +33,8 @@ export async function getSignerOrProvider(needSinger) {
         if (needSinger === true) {
             const provider = new ethers.providers.Web3Provider(window.ethereum);
             const signer = provider.getSigner();
+            const user = await signer.getAddress();
+            currentUserAddr = user;
             return signer;
         }
         const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -52,7 +63,7 @@ export async function checkIfMinted() {
     return contract;
 }
 
-export async function setWOperator(userAddress) {
+export async function setOperator(userAddress) {
     const relay = new GelatoRelay();
     const apiKey = gelatoAPI;
 
@@ -61,12 +72,12 @@ export async function setWOperator(userAddress) {
     const contractAddr = contractAddress;
     const abi = contractAbi;
 
-    const signer = await getSignerOrProvider(true);
     const provider = await getSignerOrProvider();
+    const signer = await getSignerOrProvider(true);
     const user = currentUserAddr;
 
     const contract = new ethers.Contract(contractAddr, abi, signer);
-    const { data } = await contract.populateTransaction.setWOperator(
+    const { data } = await contract.populateTransaction.setOperator(
         userAddress
     );
 
@@ -92,19 +103,22 @@ export async function whitelistUser(userAddress) {
 
     // userAddress = `0x248F5db296Ae4D318816e72c25c93e620341f621`
 
-    if (typeof window !== "undefined") {
+    // if (typeof window !== "undefined") {
         
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
-            const signer = provider.getSigner();
-            // return signer;
+    //         const provider = new ethers.providers.Web3Provider(window.ethereum);
+    //         const signer = provider.getSigner();
+    //         // return signer;
         
 
+    const signer = await getSignerOrProvider(true);
+    const provider = await getSignerOrProvider();
     const contractAddr = contractAddress;
     const abi = contractAbi;
 
     // const signer = await getSignerOrProvider(true);
     // const provider = await getSignerOrProvider();
     const user = currentUserAddr;
+    console.log("address", currentUserAddr)
 
     const contract = new ethers.Contract(contractAddr, abi, signer);
     const { data } = await contract.populateTransaction.whitelistUser(
@@ -125,7 +139,41 @@ export async function whitelistUser(userAddress) {
     );
 
     console.log(relayResponse);
-        }
+        // }
+}
+
+export async function updateURI(uri) {
+    const relay = new GelatoRelay();
+    const apiKey = gelatoAPI;
+
+    // userAddress = `0x248F5db296Ae4D318816e72c25c93e620341f621`
+
+    const contractAddr = contractAddress;
+    const abi = contractAbi;
+
+    const signer = await getSignerOrProvider(true);
+    const provider = await getSignerOrProvider();
+    const user = currentUserAddr;
+
+    const contract = new ethers.Contract(contractAddr, abi, signer);
+    const { data } = await contract.populateTransaction.updateURI(
+        uri
+    );
+
+    const request = {
+        chainId: (await provider.getNetwork()).chainId,
+        target: contractAddr,
+        data: data,
+        user: user,
+    };
+
+    const relayResponse = await relay.sponsoredCallERC2771(
+        request,
+        provider,
+        apiKey
+    );
+
+    console.log(relayResponse);
 }
 
 export async function checkIfWhitelisted() {
@@ -155,7 +203,7 @@ export async function mintNFT() {
     const user = currentUserAddr;
 
     const contract = new ethers.Contract(contractAddr, abi, signer);
-    const { data } = await contract.populateTransaction.mintNFT();
+    const { data } = await contract.populateTransaction.mintNFT(user);
 
     const request = {
         chainId: (await provider.getNetwork()).chainId,
@@ -171,24 +219,4 @@ export async function mintNFT() {
     );
 
     console.log(relayResponse);
-}
-
-export async function receiveEvent() {
-    const provider = new ethers.providers.WebSocketProvider(
-        `https://polygon-mumbai.infura.io/v3/${infuraApi}`
-    );
-
-    const contract = new ethers.Contract(
-        contractAddress,
-        contractAbi,
-        provider
-    );
-
-    contract.on("Minted", (_to, _tokenId) => {
-        let transferEvent = {
-            address: _to,
-            tokenId: _tokenId,
-        };
-        console.log(JSON.stringify(transferEvent));
-    });
 }
